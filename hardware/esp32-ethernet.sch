@@ -1239,11 +1239,11 @@ Text GLabel 9850 1800 2    39   Input ~ 0
 RMII_MDC
 Text GLabel 9850 2500 2    39   Input ~ 0
 RMII_MDIO
-Text GLabel 7250 4050 0    39   Input ~ 0
+Text GLabel 7250 4150 0    39   Input ~ 0
 B0-MISO
 Text GLabel 7250 4250 0    39   Output ~ 0
 B0-MOSI
-Text GLabel 7250 4150 0    39   Output ~ 0
+Text GLabel 7250 4050 0    39   Output ~ 0
 B0-CLK
 $Comp
 L tinkerforge:R_PACK4 RP101
@@ -1266,41 +1266,39 @@ Wire Wire Line
 	7800 4250 8450 4250
 NoConn ~ 7800 4350
 NoConn ~ 7400 4350
-Wire Wire Line
-	7800 4150 7900 4150
 $Comp
 L tinkerforge:Rs R102
 U 1 1 604DE7B5
-P 8150 4050
-F 0 "R102" V 8100 4050 39  0000 C CNN
-F 1 "10k" V 8200 4050 39  0000 C CNN
-F 2 "kicad-libraries:R0402F" H 8150 4050 60  0001 C CNN
-F 3 "" H 8150 4050 60  0000 C CNN
-	1    8150 4050
+P 8150 4150
+F 0 "R102" V 8100 4150 39  0000 C CNN
+F 1 "10k" V 8200 4150 39  0000 C CNN
+F 2 "kicad-libraries:R0402F" H 8150 4150 60  0001 C CNN
+F 3 "" H 8150 4150 60  0000 C CNN
+	1    8150 4150
 	0    -1   -1   0   
 $EndComp
 $Comp
 L tinkerforge:GND #PWR0102
 U 1 1 604DE7BB
-P 8300 4050
-F 0 "#PWR0102" H 8300 4050 30  0001 C CNN
-F 1 "GND" H 8300 3980 30  0001 C CNN
-F 2 "" H 8300 4050 60  0000 C CNN
-F 3 "" H 8300 4050 60  0000 C CNN
-	1    8300 4050
+P 8300 4150
+F 0 "#PWR0102" H 8300 4150 30  0001 C CNN
+F 1 "GND" H 8300 4080 30  0001 C CNN
+F 2 "" H 8300 4150 60  0000 C CNN
+F 3 "" H 8300 4150 60  0000 C CNN
+	1    8300 4150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8250 4050 8300 4050
+	8250 4150 8300 4150
 Wire Wire Line
 	8600 2900 7900 2900
 Wire Wire Line
 	8600 3000 8000 3000
 Wire Wire Line
 	8600 3200 8450 3200
-Text GLabel 8500 2400 0    39   Output ~ 0
-B-CS0
 Text GLabel 8500 2500 0    39   Output ~ 0
+B-CS0
+Text GLabel 8500 2400 0    39   Output ~ 0
 B-CS1
 Text Notes 8900 2050 0    39   ~ 0
 only input
@@ -1335,7 +1333,7 @@ Wire Wire Line
 Connection ~ 9650 1600
 Text GLabel 8500 5350 0    39   Input ~ 0
 ESP_EN_KEY
-Text GLabel 8500 5950 0    39   Input ~ 0
+Text GLabel 8500 5750 0    39   Input ~ 0
 ESP_IO0_KEY
 Text GLabel 9050 5850 2    39   Output ~ 0
 ESP_IO0
@@ -1343,7 +1341,7 @@ Text GLabel 9050 5250 2    39   Output ~ 0
 ESP_EN
 Text GLabel 8500 5150 0    39   Input ~ 0
 ESP_EN_AUTO
-Text GLabel 8500 5750 0    39   Input ~ 0
+Text GLabel 8500 5950 0    39   Input ~ 0
 ESP_IO0_AUTO
 Text GLabel 9650 3200 2    39   Output ~ 0
 LED_BLUE
@@ -1357,16 +1355,7 @@ Wire Wire Line
 	9950 3300 9950 3100
 Connection ~ 9950 3100
 Wire Wire Line
-	7800 4050 8000 4050
-Wire Wire Line
-	7900 4150 7900 2900
-Wire Wire Line
 	8450 4250 8450 3200
-Wire Wire Line
-	8000 4050 8000 3000
-Connection ~ 8000 4050
-Wire Wire Line
-	8000 4050 8050 4050
 $Comp
 L tinkerforge:GND #PWR0115
 U 1 1 607EFEC1
@@ -1467,7 +1456,7 @@ Text GLabel 10550 5350 1    39   Output ~ 0
 LED_BLUE
 Text GLabel 10650 5350 1    39   Output ~ 0
 LED_GREEN
-Text Notes 8050 3950 0    39   ~ 0
+Text Notes 8050 4050 0    39   ~ 0
 Fuse necessary?
 $Comp
 L tinkerforge:DRILL F105
@@ -1607,4 +1596,15 @@ F 3 "" H 5950 2950 60  0000 C CNN
 $EndComp
 Text GLabel 10150 3150 3    39   Output ~ 0
 LED_GREEN
+Wire Wire Line
+	7800 4050 7900 4050
+Wire Wire Line
+	7900 4050 7900 2900
+Wire Wire Line
+	7800 4150 8000 4150
+Wire Wire Line
+	8000 3000 8000 4150
+Connection ~ 8000 4150
+Wire Wire Line
+	8000 4150 8050 4150
 $EndSCHEMATC

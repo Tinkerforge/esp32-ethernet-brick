@@ -1505,19 +1505,19 @@ Text GLabel 10050 2050 2    39   Input ~ 0
 B0-CS4
 Text GLabel 10050 2550 2    39   Input ~ 0
 B0-CS5
-Text GLabel 8350 5550 0    39   Output ~ 0
-B0-CS3
-Text GLabel 8350 5650 0    39   Output ~ 0
-B0-CS4
-Text GLabel 8350 5750 0    39   Output ~ 0
-B0-CS5
 Text GLabel 8350 5450 0    39   Output ~ 0
+B0-CS3
+Text GLabel 8350 5350 0    39   Output ~ 0
+B0-CS4
+Text GLabel 8350 5250 0    39   Output ~ 0
+B0-CS5
+Text GLabel 8350 5550 0    39   Output ~ 0
 B0-CS2
 Text GLabel 10250 5450 2    39   Input ~ 0
 B-CS2
-Text GLabel 8350 5350 0    39   Output ~ 0
+Text GLabel 8350 5650 0    39   Output ~ 0
 B0-CS1
-Text GLabel 8350 5250 0    39   Output ~ 0
+Text GLabel 8350 5750 0    39   Output ~ 0
 B0-CS0
 Text GLabel 10250 5350 2    39   Input ~ 0
 B-CS1
