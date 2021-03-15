@@ -349,14 +349,6 @@ F 3 "" H 9500 2400 50  0000 C CNN
 	1    9500 2400
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	9700 2250 10100 2250
-Wire Wire Line
-	10100 2350 9700 2350
-Wire Wire Line
-	9700 2450 10100 2450
-Wire Wire Line
-	10100 2550 9700 2550
 $Comp
 L tinkerforge:C C?
 U 1 1 60F95BCD
@@ -1064,4 +1056,12 @@ Wire Wire Line
 	10100 1750 10050 1750
 Wire Wire Line
 	2500 3050 2500 3150
+Wire Wire Line
+	9700 2250 10100 2250
+Wire Wire Line
+	9700 2350 10100 2350
+Wire Wire Line
+	9700 2450 10100 2450
+Wire Wire Line
+	9700 2550 10100 2550
 $EndSCHEMATC
