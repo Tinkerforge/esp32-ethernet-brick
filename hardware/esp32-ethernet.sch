@@ -1221,7 +1221,7 @@ F 3 "" H 9000 3650 39  0001 C CNN
 	1    9100 2550
 	1    0    0    -1  
 $EndComp
-Text GLabel 10600 3000 2    39   Output ~ 0
+Text GLabel 10600 3000 2    39   Input ~ 0
 RMII_REF_CLK_50M
 Text GLabel 9850 2200 2    39   Output ~ 0
 RMII_TX_EN
