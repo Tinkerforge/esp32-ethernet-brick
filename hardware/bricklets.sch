@@ -666,13 +666,13 @@ Connection ~ 2250 1750
 Text Notes 4500 7700 0    39   ~ 0
 Copyright Tinkerforge GmbH 2021\nThis documentation describes Open Hardware and is licensed under the\nCERN OHL v. 1.1.\nYou may redistribute and modify this documentation under the terms of the\nCERN OHL v.1.1. (http://ohwr.org/cernohl). This documentation is distributed\nWITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF\nMERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A\nPARTICULAR PURPOSE. Please see the CERN OHL v.1.1 for applicable\nconditions
 Text Notes 1250 1850 0    118  ~ 0
-A
+F
 Text Notes 1250 3200 0    118  ~ 0
-B
+E
 Text Notes 1300 4900 0    118  ~ 0
-C
-Text Notes 1300 6200 0    118  ~ 0
 D
+Text Notes 1300 6200 0    118  ~ 0
+C
 Wire Wire Line
 	4200 1650 4200 1750
 Wire Wire Line
@@ -1203,9 +1203,9 @@ Wire Wire Line
 Wire Wire Line
 	7400 1550 7350 1550
 Text Notes 6500 1900 0    118  ~ 0
-E
+B
 Text Notes 6500 3200 0    118  ~ 0
-F
+A
 Wire Wire Line
 	9400 1650 9400 1750
 Wire Wire Line
