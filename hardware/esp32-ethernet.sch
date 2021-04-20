@@ -1033,7 +1033,7 @@ F 3 "" H 10750 5350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 10250 5350 1    39   Input ~ 0
-ESP_IO35
+ESP_IO4
 Wire Wire Line
 	10650 5450 10650 5350
 Wire Wire Line
@@ -1239,66 +1239,36 @@ Text GLabel 9850 1800 2    39   Input ~ 0
 RMII_MDC
 Text GLabel 9850 2500 2    39   Input ~ 0
 RMII_MDIO
-Text GLabel 7250 4150 0    39   Input ~ 0
+Text GLabel 7300 2300 0    39   Input ~ 0
 B0-MISO
-Text GLabel 7250 4250 0    39   Output ~ 0
+Text GLabel 7300 2500 0    39   Output ~ 0
 B0-MOSI
-Text GLabel 7250 4050 0    39   Output ~ 0
+Text GLabel 7300 2400 0    39   Output ~ 0
 B0-CLK
 $Comp
 L tinkerforge:R_PACK4 RP101
 U 1 1 604DE7A4
-P 7600 4400
-F 0 "RP101" H 7600 4965 50  0000 C CNN
-F 1 "82" H 7600 4874 50  0000 C CNN
-F 2 "kicad-libraries:4X0402" H 7600 4400 50  0001 C CNN
-F 3 "" H 7600 4400 50  0000 C CNN
-	1    7600 4400
-	1    0    0    -1  
+P 7650 2650
+F 0 "RP101" H 7650 3215 50  0000 C CNN
+F 1 "82" H 7650 3124 50  0000 C CNN
+F 2 "kicad-libraries:4X0402" H 7650 2650 50  0001 C CNN
+F 3 "" H 7650 2650 50  0000 C CNN
+	1    7650 2650
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	7400 4050 7250 4050
+	7450 2300 7300 2300
 Wire Wire Line
-	7250 4150 7400 4150
+	7300 2400 7450 2400
 Wire Wire Line
-	7250 4250 7400 4250
-Wire Wire Line
-	7800 4250 8450 4250
-NoConn ~ 7800 4350
-NoConn ~ 7400 4350
-$Comp
-L tinkerforge:Rs R102
-U 1 1 604DE7B5
-P 8150 4150
-F 0 "R102" V 8100 4150 39  0000 C CNN
-F 1 "10k" V 8200 4150 39  0000 C CNN
-F 2 "kicad-libraries:R0402F" H 8150 4150 60  0001 C CNN
-F 3 "" H 8150 4150 60  0000 C CNN
-	1    8150 4150
-	0    -1   -1   0   
-$EndComp
-$Comp
-L tinkerforge:GND #PWR0102
-U 1 1 604DE7BB
-P 8300 4150
-F 0 "#PWR0102" H 8300 4150 30  0001 C CNN
-F 1 "GND" H 8300 4080 30  0001 C CNN
-F 2 "" H 8300 4150 60  0000 C CNN
-F 3 "" H 8300 4150 60  0000 C CNN
-	1    8300 4150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8250 4150 8300 4150
+	7300 2500 7450 2500
+NoConn ~ 7850 2600
+NoConn ~ 7450 2600
 Wire Wire Line
 	8600 2900 7900 2900
-Wire Wire Line
-	8600 3000 8000 3000
-Wire Wire Line
-	8600 3200 8450 3200
-Text GLabel 8500 2500 0    39   Output ~ 0
+Text GLabel 7900 3000 0    39   Output ~ 0
 B-CS0
-Text GLabel 8500 2400 0    39   Output ~ 0
+Text GLabel 7900 3200 0    39   Output ~ 0
 B-CS1
 Text Notes 8900 2050 0    39   ~ 0
 only input
@@ -1354,23 +1324,19 @@ Wire Wire Line
 Wire Wire Line
 	9950 3300 9950 3100
 Connection ~ 9950 3100
-Wire Wire Line
-	8450 4250 8450 3200
 $Comp
 L tinkerforge:GND #PWR0115
 U 1 1 607EFEC1
-P 8350 3150
-F 0 "#PWR0115" H 8350 3150 30  0001 C CNN
-F 1 "GND" H 8350 3080 30  0001 C CNN
-F 2 "" H 8350 3150 60  0000 C CNN
-F 3 "" H 8350 3150 60  0000 C CNN
-	1    8350 3150
+P 8350 3250
+F 0 "#PWR0115" H 8350 3250 30  0001 C CNN
+F 1 "GND" H 8350 3180 30  0001 C CNN
+F 2 "" H 8350 3250 60  0000 C CNN
+F 3 "" H 8350 3250 60  0000 C CNN
+	1    8350 3250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	8600 3100 8350 3100
-Wire Wire Line
-	8350 3100 8350 3150
 $Comp
 L tinkerforge:Rs R110
 U 1 1 608B0A25
@@ -1429,12 +1395,8 @@ only input
 Text Notes 8750 2350 0    39   ~ 0
 only input
 Wire Wire Line
-	8500 2400 8600 2400
-Wire Wire Line
-	8600 2500 8500 2500
-Wire Wire Line
 	9600 2900 9850 2900
-Text GLabel 9850 2900 2    39   Output ~ 0
+Text GLabel 7900 2900 0    39   Output ~ 0
 B-CS2
 Wire Wire Line
 	9600 3200 9650 3200
@@ -1444,20 +1406,16 @@ Text Notes 9150 2650 0    39   ~ 0
 PWM boot
 Wire Wire Line
 	8500 2200 8600 2200
-Text GLabel 8500 2300 0    39   Input ~ 0
-ESP_IO35
-Wire Wire Line
-	8500 2300 8600 2300
+Text GLabel 9850 2900 2    39   Input ~ 0
+ESP_IO4
 Text GLabel 10350 5350 1    39   Input ~ 0
 ESP_IO34
-Text Notes 10150 5000 0    39   ~ 0
+Text Notes 10350 5000 1    39   ~ 0
 only input
 Text GLabel 10550 5350 1    39   Output ~ 0
 LED_BLUE
 Text GLabel 10650 5350 1    39   Output ~ 0
 LED_GREEN
-Text Notes 8050 4050 0    39   ~ 0
-Fuse necessary?
 $Comp
 L tinkerforge:DRILL F105
 U 1 1 60E1C707
@@ -1595,17 +1553,6 @@ F 3 "" H 5950 2950 60  0000 C CNN
 $EndComp
 Text GLabel 10150 3150 3    39   Output ~ 0
 LED_GREEN
-Wire Wire Line
-	7800 4050 7900 4050
-Wire Wire Line
-	7900 4050 7900 2900
-Wire Wire Line
-	7800 4150 8000 4150
-Wire Wire Line
-	8000 3000 8000 4150
-Connection ~ 8000 4150
-Wire Wire Line
-	8000 4150 8050 4150
 $Comp
 L tinkerforge:GND #PWR0166
 U 1 1 605B80EC
@@ -1619,4 +1566,18 @@ F 3 "" H 10450 5400 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	10450 5450 10450 5400
+Wire Wire Line
+	7850 2500 8600 2500
+Wire Wire Line
+	7850 2300 8600 2300
+Wire Wire Line
+	7850 2400 8600 2400
+Wire Wire Line
+	7900 3200 8600 3200
+Wire Wire Line
+	8350 3100 8350 3250
+Wire Wire Line
+	7900 3000 8600 3000
+Text Notes 10150 5450 1    39   ~ 0
+Todo Text anpassen auf PCB
 $EndSCHEMATC
