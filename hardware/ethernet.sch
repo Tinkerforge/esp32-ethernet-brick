@@ -344,7 +344,7 @@ U 1 1 60F880F0
 P 9500 2450
 F 0 "P301" V 9600 2600 50  0000 C CNN
 F 1 "POE" V 9600 2350 50  0000 C CNN
-F 2 "kicad-libraries:pin_array_5x1" H 9500 2450 50  0001 C CNN
+F 2 "kicad-libraries:pin_array_1x5-P2mm_D1mm" H 9500 2450 50  0001 C CNN
 F 3 "" H 9500 2450 50  0000 C CNN
 	1    9500 2450
 	-1   0    0    -1  
