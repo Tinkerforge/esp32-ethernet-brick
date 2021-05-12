@@ -1580,4 +1580,34 @@ Wire Wire Line
 	7900 3000 8600 3000
 Text Notes 10150 5450 1    39   ~ 0
 Todo Text anpassen auf PCB
+$Comp
+L tinkerforge:Rs R102
+U 1 1 609EDD34
+P 8750 6300
+F 0 "R102" V 8700 6300 39  0000 C CNN
+F 1 "20k" V 8800 6300 39  0000 C CNN
+F 2 "kicad-libraries:R0402F" H 8750 6300 60  0001 C CNN
+F 3 "" H 8750 6300 60  0000 C CNN
+	1    8750 6300
+	0    1    1    0   
+$EndComp
+Text GLabel 9050 6300 2    39   Output ~ 0
+ESP_IO0
+$Comp
+L tinkerforge:3V3 #PWR0102
+U 1 1 609F2E8F
+P 8450 6300
+F 0 "#PWR0102" H 8450 6400 40  0001 C CNN
+F 1 "3V3" H 8450 6425 40  0000 C CNN
+F 2 "" H 8450 6300 60  0000 C CNN
+F 3 "" H 8450 6300 60  0000 C CNN
+	1    8450 6300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8450 6300 8650 6300
+Wire Wire Line
+	8850 6300 9050 6300
+Text Notes 8600 6450 0    39   ~ 0
+Strap Pin
 $EndSCHEMATC
