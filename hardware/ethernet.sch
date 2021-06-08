@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 3
 Title "ESP32 Ethernet Brick"
-Date "2021-03-12"
-Rev "1.0"
+Date "2021-06-08"
+Rev "1.2"
 Comp "Tinkerforge GmbH"
 Comment1 "Licensed under CERN OHL v.1.1"
 Comment2 "Copyright (©) 2021, B.Nordmeyer <bastian@tinkerforge.com>"
@@ -33,58 +33,45 @@ Text GLabel 4950 2900 2    39   Output ~ 0
 RMII_REF_CLK_50M
 Text Notes 4550 7750 0    39   ~ 0
 Copyright Tinkerforge GmbH 2021.\nThis documentation describes Open Hardware and is licensed under the\nCERN OHL v. 1.1.\nYou may redistribute and modify this documentation under the terms of the\nCERN OHL v.1.1. (http://ohwr.org/cernohl). This documentation is distributed\nWITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF\nMERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A\nPARTICULAR PURPOSE. Please see the CERN OHL v.1.1 for applicable\nconditions
-Text GLabel 9500 2000 0    39   Input ~ 0
+Text GLabel 9500 2450 0    39   Input ~ 0
 yellowLED
 $Comp
 L tinkerforge:R R?
 U 1 1 60EBCFDB
-P 9800 2000
+P 9800 2450
 AR Path="/60E1F910/60E945DD/60EBCFDB" Ref="R?"  Part="1" 
 AR Path="/60E1F910/60EBCFDB" Ref="R316"  Part="1" 
-F 0 "R316" V 9880 2000 50  0000 C CNN
-F 1 "470" V 9800 2000 50  0000 C CNN
-F 2 "kicad-libraries:R0402F" H 9800 2000 60  0001 C CNN
-F 3 "" H 9800 2000 60  0001 C CNN
-	1    9800 2000
+F 0 "R316" V 9700 2450 50  0000 C CNN
+F 1 "470" V 9800 2450 50  0000 C CNN
+F 2 "kicad-libraries:R0402F" H 9800 2450 60  0001 C CNN
+F 3 "" H 9800 2450 60  0001 C CNN
+	1    9800 2450
 	0    -1   -1   0   
 $EndComp
 $Comp
 L tinkerforge:R R?
 U 1 1 60EBCFE1
-P 9800 1850
+P 9800 2200
 AR Path="/60E1F910/60E945DD/60EBCFE1" Ref="R?"  Part="1" 
 AR Path="/60E1F910/60EBCFE1" Ref="R315"  Part="1" 
-F 0 "R315" V 9880 1850 50  0000 C CNN
-F 1 "470" V 9800 1850 50  0000 C CNN
-F 2 "kicad-libraries:R0402F" H 9800 1850 60  0001 C CNN
-F 3 "" H 9800 1850 60  0001 C CNN
-	1    9800 1850
+F 0 "R315" V 9880 2200 50  0000 C CNN
+F 1 "470" V 9800 2200 50  0000 C CNN
+F 2 "kicad-libraries:R0402F" H 9800 2200 60  0001 C CNN
+F 3 "" H 9800 2200 60  0001 C CNN
+	1    9800 2200
 	0    -1   -1   0   
-$EndComp
-$Comp
-L tinkerforge:RJPSL-001TA1 P?
-U 1 1 60EBCFE7
-P 10650 1650
-AR Path="/60E1F910/60E945DD/60EBCFE7" Ref="P?"  Part="1" 
-AR Path="/60E1F910/60EBCFE7" Ref="P302"  Part="1" 
-F 0 "P302" H 10300 2400 60  0000 C CNN
-F 1 "RJPSL-001TA1" H 10550 350 60  0000 C CNN
-F 2 "kicad-libraries:RJPSL-001TA1" H 10650 1650 60  0001 C CNN
-F 3 "" H 10650 1650 60  0001 C CNN
-	1    10650 1650
-	1    0    0    -1  
 $EndComp
 $Comp
 L tinkerforge:GND #PWR?
 U 1 1 60EBCFED
-P 9600 2950
+P 9850 3150
 AR Path="/60E1F910/60E945DD/60EBCFED" Ref="#PWR?"  Part="1" 
 AR Path="/60E1F910/60EBCFED" Ref="#PWR0161"  Part="1" 
-F 0 "#PWR0161" H 9600 2950 30  0001 C CNN
-F 1 "GND" H 9600 2880 30  0001 C CNN
-F 2 "" H 9600 2950 60  0001 C CNN
-F 3 "" H 9600 2950 60  0001 C CNN
-	1    9600 2950
+F 0 "#PWR0161" H 9850 3150 30  0001 C CNN
+F 1 "GND" H 9850 3080 30  0001 C CNN
+F 2 "" H 9850 3150 60  0001 C CNN
+F 3 "" H 9850 3150 60  0001 C CNN
+	1    9850 3150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -176,14 +163,14 @@ TXOP
 $Comp
 L tinkerforge:C C?
 U 1 1 60EBD033
-P 9800 2750
+P 10050 2950
 AR Path="/60E1F910/60E945DD/60EBD033" Ref="C?"  Part="1" 
 AR Path="/60E1F910/60EBD033" Ref="C314"  Part="1" 
-F 0 "C314" V 10050 2700 50  0000 L CNN
-F 1 "1nF/2kV" V 9950 2650 50  0000 L CNN
-F 2 "kicad-libraries:C1206" H 9800 2750 60  0001 C CNN
-F 3 "" H 9800 2750 60  0001 C CNN
-	1    9800 2750
+F 0 "C314" V 10300 2900 50  0000 L CNN
+F 1 "1nF/2kV" V 10200 2850 50  0000 L CNN
+F 2 "kicad-libraries:C1206" H 10050 2950 60  0001 C CNN
+F 3 "" H 10050 2950 60  0001 C CNN
+	1    10050 2950
 	0    1    1    0   
 $EndComp
 Text GLabel 9050 1600 0    39   Output ~ 0
@@ -195,31 +182,23 @@ TXON
 Text GLabel 9050 1050 0    39   Input ~ 0
 TXOP
 Wire Wire Line
-	9350 1850 9550 1850
-Wire Wire Line
-	10050 2100 10100 2100
-Wire Wire Line
 	3150 4450 3000 4450
 Wire Wire Line
 	3850 4950 3850 4850
 Wire Wire Line
-	9600 2750 9600 2950
+	9850 2950 9850 3150
 Wire Wire Line
-	10000 2750 10100 2750
+	10250 2950 10350 2950
 Wire Wire Line
 	3300 4950 3300 4750
 Wire Wire Line
 	3000 4950 3000 4850
 Wire Wire Line
 	3850 4450 3750 4450
-Wire Wire Line
-	10050 2000 10100 2000
-Wire Wire Line
-	10100 1850 10050 1850
 Text GLabel 4050 2050 1    39   Output ~ 0
 yellowLED
 Wire Wire Line
-	9500 2000 9550 2000
+	9500 2450 9550 2450
 $Comp
 L tinkerforge:GND #PWR?
 U 1 1 60EBD0BC
@@ -261,21 +240,18 @@ Wire Wire Line
 $Comp
 L tinkerforge:3V3 #PWR?
 U 1 1 60EBD108
-P 10050 2100
+P 10050 2550
 AR Path="/60E1F910/60E945DD/60EBD108" Ref="#PWR?"  Part="1" 
 AR Path="/60E1F910/60EBD108" Ref="#PWR0167"  Part="1" 
-F 0 "#PWR0167" H 10050 2200 40  0001 C CNN
-F 1 "3V3" H 10050 2225 40  0000 C CNN
-F 2 "" H 10050 2100 60  0001 C CNN
-F 3 "" H 10050 2100 60  0001 C CNN
-	1    10050 2100
+F 0 "#PWR0167" H 10050 2650 40  0001 C CNN
+F 1 "3V3" H 10050 2675 40  0000 C CNN
+F 2 "" H 10050 2550 60  0001 C CNN
+F 3 "" H 10050 2550 60  0001 C CNN
+	1    10050 2550
 	0    -1   -1   0   
 $EndComp
-Text GLabel 10100 2950 3    60   Input ~ 0
+Text GLabel 10350 3150 3    60   Input ~ 0
 SHD
-Wire Wire Line
-	10100 2950 10100 2750
-Connection ~ 10100 2750
 $Comp
 L tinkerforge:INDUCT L?
 U 1 1 60EBD11F
@@ -338,17 +314,6 @@ Wire Wire Line
 	9700 1250 10100 1250
 Wire Wire Line
 	10100 1050 9700 1050
-$Comp
-L tinkerforge:CONN_01X05 P301
-U 1 1 60F880F0
-P 9500 2450
-F 0 "P301" V 9600 2600 50  0000 C CNN
-F 1 "POE" V 9600 2350 50  0000 C CNN
-F 2 "kicad-libraries:pin_array_1x5-P2mm_D1mm" H 9500 2450 50  0001 C CNN
-F 3 "" H 9500 2450 50  0000 C CNN
-	1    9500 2450
-	-1   0    0    -1  
-$EndComp
 $Comp
 L tinkerforge:C C?
 U 1 1 60F95BCD
@@ -1037,37 +1002,49 @@ Wire Wire Line
 Connection ~ 6400 3100
 Wire Wire Line
 	6400 3600 6400 3500
-Text GLabel 9350 1850 0    39   Output ~ 0
+Text GLabel 9350 2300 0    39   Output ~ 0
 LED_GREEN
 $Comp
 L tinkerforge:GND #PWR?
 U 1 1 612D60CA
-P 10050 1750
+P 9500 2200
 AR Path="/60E1F910/60E945DD/612D60CA" Ref="#PWR?"  Part="1" 
 AR Path="/60E1F910/612D60CA" Ref="#PWR0160"  Part="1" 
-F 0 "#PWR0160" H 10050 1750 30  0001 C CNN
-F 1 "GND" H 10050 1680 30  0001 C CNN
-F 2 "" H 10050 1750 60  0001 C CNN
-F 3 "" H 10050 1750 60  0001 C CNN
-	1    10050 1750
+F 0 "#PWR0160" H 9500 2200 30  0001 C CNN
+F 1 "GND" H 9500 2130 30  0001 C CNN
+F 2 "" H 9500 2200 60  0001 C CNN
+F 3 "" H 9500 2200 60  0001 C CNN
+	1    9500 2200
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	10100 1750 10050 1750
+	10100 2200 10050 2200
 Wire Wire Line
 	2500 3050 2500 3150
-Wire Wire Line
-	9700 2250 10100 2250
-Wire Wire Line
-	9700 2350 10100 2350
-Wire Wire Line
-	9700 2450 10100 2450
-Wire Wire Line
-	9700 2550 10100 2550
-Wire Wire Line
-	9700 2650 10100 2650
-Wire Wire Line
-	10100 2650 10100 2750
 Text Notes 4550 3750 0    39   ~ 0
 Alternative KSZ8091RNAIA
+Wire Wire Line
+	10050 2450 10100 2450
+Wire Wire Line
+	10100 2550 10050 2550
+$Comp
+L tinkerforge:RJSL-009TA1 J301
+U 1 1 60C1C648
+P 10350 1500
+F 0 "J301" H 10528 1118 50  0000 L CNN
+F 1 "RJSL-009TA1" H 10528 1027 50  0000 L CNN
+F 2 "kicad-libraries:RJSL-009TA1" H 10200 1600 50  0001 C CNN
+F 3 "" H 10200 1600 50  0001 C CNN
+	1    10350 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10350 2850 10350 2950
+Connection ~ 10350 2950
+Wire Wire Line
+	10350 2950 10350 3150
+Wire Wire Line
+	9350 2300 10100 2300
+Wire Wire Line
+	9550 2200 9500 2200
 $EndSCHEMATC
