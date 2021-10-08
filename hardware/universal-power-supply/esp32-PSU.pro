@@ -1,6 +1,6 @@
-update=16.09.2021 10:27:21
+update=07.10.2021 13:10:11
 version=1
-last_client=pcbnew
+last_client=kicad
 [cvpcb]
 version=1
 NetITyp=0
@@ -29,7 +29,7 @@ ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=esp32-ethernet-PSU.net
+LastNetListRead=esp32-PSU.net
 CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0
