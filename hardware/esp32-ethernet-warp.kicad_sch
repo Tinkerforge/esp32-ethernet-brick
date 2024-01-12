@@ -6,8 +6,8 @@
 
   (title_block
     (title "WARP ESP32 Ethernet Brick")
-    (date "2023-12-27")
-    (rev "1.3")
+    (date "2023-12-02")
+    (rev "1.2")
     (company "Tinkerforge GmbH")
     (comment 1 "Licensed under CERN OHL v.1.1")
     (comment 2 "Copyright (©) 2023, B.Nordmeyer <bastian@tinkerforge.com>")
@@ -461,6 +461,26 @@
         (effects (font (size 1.524 1.524)))
       )
       (symbol "DRILL_4_0_1"
+        (rectangle (start -3.81 2.54) (end 3.81 -2.54)
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+    )
+    (symbol "DRILL_5" (pin_numbers hide) (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "" (at 0 0 0)
+        (effects (font (size 1.524 1.524)) hide)
+      )
+      (property "Value" "DRILL_5" (at 0 0 0)
+        (effects (font (size 1.524 1.524)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.524 1.524)))
+      )
+      (property "Datasheet" "" (at 0 0 0)
+        (effects (font (size 1.524 1.524)))
+      )
+      (symbol "DRILL_5_0_1"
         (rectangle (start -3.81 2.54) (end 3.81 -2.54)
           (stroke (width 0) (type default))
           (fill (type none))
@@ -3633,7 +3653,7 @@
     (pin "1" (uuid 7537ff07-7aaa-4a84-9656-df6bd0a47454))
     (pin "2" (uuid 31007ef5-5ce2-4c1b-82a4-b2b5c0ce2258))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "C106") (unit 1)
         )
@@ -3659,7 +3679,7 @@
     (pin "1" (uuid be6d0e9a-458d-41df-886e-dc4a5113e659))
     (pin "2" (uuid 1173319c-c66b-4402-91b8-2cf13f33b9e4))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "D101") (unit 1)
         )
@@ -3684,7 +3704,7 @@
     )
     (pin "1" (uuid 96d53510-3b53-48ed-a70c-4e71d8eee805))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "#PWR0104") (unit 1)
         )
@@ -3709,7 +3729,7 @@
     )
     (pin "1" (uuid 9e7b441c-15b1-4050-888a-411dea12e93d))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "#PWR0117") (unit 1)
         )
@@ -3734,7 +3754,7 @@
     )
     (pin "1" (uuid c68d2736-2b3a-4757-8418-fb123e18441e))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "#PWR0125") (unit 1)
         )
@@ -3760,7 +3780,7 @@
     (pin "1" (uuid 92f4061b-10af-43b4-9f76-589dabbbe943))
     (pin "2" (uuid 4281c2d9-ea46-47cd-8918-7a26c54660e2))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "R107") (unit 1)
         )
@@ -3786,7 +3806,7 @@
     (pin "1" (uuid 60b2d29d-1e49-4405-83f9-1a9f26bf063b))
     (pin "2" (uuid 1c1373aa-0973-4548-bd80-7ce6cc9b7fcc))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "R108") (unit 1)
         )
@@ -3812,7 +3832,7 @@
     (pin "1" (uuid 8f880d04-feba-4c01-9970-3e9e6662bc13))
     (pin "2" (uuid d456b141-66aa-4e69-9a12-07752a7d5ae9))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "R109") (unit 1)
         )
@@ -3839,7 +3859,7 @@
     (pin "C" (uuid fd7d1c9a-5075-4bfc-8e66-3ce45c3a4d5c))
     (pin "E" (uuid ca082ee7-271e-47b0-bfaa-cfd4d5997cf0))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "Q101") (unit 1)
         )
@@ -3866,7 +3886,7 @@
     (pin "C" (uuid 06896558-9228-49c8-b32d-7046d1fc5d57))
     (pin "E" (uuid f5bf39c9-d3e3-4ef6-a08c-c2ef0e4e6d77))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "Q102") (unit 1)
         )
@@ -3892,7 +3912,7 @@
     (pin "1" (uuid a5ae2b0d-51d2-4a1c-bd39-a4b4d86101ed))
     (pin "2" (uuid 38044f11-0472-4f28-a6b4-bcc1e1c86a53))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "R111") (unit 1)
         )
@@ -3918,7 +3938,7 @@
     (pin "1" (uuid a3a38c88-f2d8-44d6-946d-3ddfa3d833cb))
     (pin "2" (uuid 5af293f5-156b-49cd-a17e-86f0b95aa2b0))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "C112") (unit 1)
         )
@@ -3943,7 +3963,7 @@
     )
     (pin "1" (uuid dd16164a-6e5e-41cf-a798-959dda4187f6))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "#PWR0124") (unit 1)
         )
@@ -3969,7 +3989,7 @@
     (pin "1" (uuid 32a66dac-975e-40eb-9f53-4bda2e44e7e8))
     (pin "2" (uuid 7c3033ce-ec9e-4a63-ba0c-8ca290f1a5c6))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "C109") (unit 1)
         )
@@ -3993,7 +4013,7 @@
       (effects (font (size 1.524 1.524)))
     )
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "F103") (unit 1)
         )
@@ -4001,10 +4021,10 @@
     )
   )
 
-  (symbol (lib_name "DRILL_2") (lib_id "tinkerforge:DRILL") (at 262.89 154.94 0) (unit 1)
+  (symbol (lib_name "DRILL_5") (lib_id "tinkerforge:DRILL") (at 262.89 154.94 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-00005f0ce564)
-    (property "Reference" "F102" (at 264.16 153.67 0)
+    (uuid 00000000-0000-0000-0000-00005f0ce30f)
+    (property "Reference" "F101" (at 264.16 153.67 0)
       (effects (font (size 1.524 1.524)) hide)
     )
     (property "Value" "DRILL" (at 260.35 154.94 0)
@@ -4017,7 +4037,31 @@
       (effects (font (size 1.524 1.524)))
     )
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
+        (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
+          (reference "F101") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_name "DRILL_2") (lib_id "tinkerforge:DRILL") (at 262.89 161.29 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 00000000-0000-0000-0000-00005f0ce564)
+    (property "Reference" "F102" (at 264.16 160.02 0)
+      (effects (font (size 1.524 1.524)) hide)
+    )
+    (property "Value" "DRILL" (at 260.35 161.29 0)
+      (effects (font (size 1.524 1.524)) (justify left))
+    )
+    (property "Footprint" "kicad-libraries:LSMTSO-M3" (at 262.89 161.29 0)
+      (effects (font (size 1.524 1.524)) hide)
+    )
+    (property "Datasheet" "" (at 262.89 161.29 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (instances
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "F102") (unit 1)
         )
@@ -4049,7 +4093,7 @@
     (pin "7" (uuid beb0c53d-dca3-46c9-8e60-c9830a4e4a36))
     (pin "8" (uuid 0c11c073-df6c-419d-af30-2cc5a99bba93))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "RP104") (unit 1)
         )
@@ -4074,7 +4118,7 @@
     )
     (pin "1" (uuid 315b4a8e-c37c-478d-8dbf-1b8edcba5631))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "#PWR0103") (unit 1)
         )
@@ -4099,7 +4143,7 @@
     )
     (pin "1" (uuid 45a7789a-9e37-4c34-887d-fd2a717f4313))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "#PWR0121") (unit 1)
         )
@@ -4125,7 +4169,7 @@
     (pin "1" (uuid 78f04a8a-4d34-4cdc-b2b0-1a760c942dba))
     (pin "2" (uuid 5c33ece6-3267-4057-9847-5fcb70c5b032))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "R112") (unit 1)
         )
@@ -4151,7 +4195,7 @@
     (pin "1" (uuid 27b55d0b-4c1e-4557-8043-aef908eb2d07))
     (pin "2" (uuid e0924edc-d834-4a84-8518-70771e84372c))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "SW101") (unit 1)
         )
@@ -4177,7 +4221,7 @@
     (pin "1" (uuid 569934e4-7067-4555-8ae4-52e858473ed1))
     (pin "2" (uuid d30ceb50-87bd-479c-a6f4-dd96b0a0291d))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "R113") (unit 1)
         )
@@ -4203,7 +4247,7 @@
     (pin "1" (uuid 99fdd73c-0689-48e0-8a3d-0438f292b2df))
     (pin "2" (uuid fcfd4ca1-b762-4d25-b47c-f03a6aa6280b))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "C113") (unit 1)
         )
@@ -4228,7 +4272,7 @@
     )
     (pin "1" (uuid 0375a658-b45a-4f56-a4b2-1824a5c80499))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "#PWR0113") (unit 1)
         )
@@ -4254,7 +4298,7 @@
     (pin "1" (uuid 795d8538-9174-4a56-825f-e7f1003227fb))
     (pin "2" (uuid 60326427-92e3-45e7-81ae-afe17d75b653))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "SW102") (unit 1)
         )
@@ -4280,7 +4324,7 @@
     (pin "1" (uuid 27359e75-2243-4463-be40-07d53bdd99e9))
     (pin "2" (uuid feaded55-4d88-4c13-8ef2-7afb81281915))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "R114") (unit 1)
         )
@@ -4306,7 +4350,7 @@
     (pin "1" (uuid adcbbeb0-dc62-42ab-a874-340e7a0e3f3a))
     (pin "2" (uuid b7fe82ab-aca1-4d70-a4ab-ffe41bc9a831))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "C114") (unit 1)
         )
@@ -4331,7 +4375,7 @@
     )
     (pin "1" (uuid 980d8de8-933d-4154-a80c-029d9620f7dd))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "#PWR0114") (unit 1)
         )
@@ -4394,7 +4438,7 @@
     (pin "8" (uuid f05ee455-37b8-45f6-8834-b13c5455815b))
     (pin "9" (uuid f7882979-9100-4459-9cda-f3709dc94ed8))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "U104") (unit 1)
         )
@@ -4426,7 +4470,7 @@
     (pin "7" (uuid b03b62e9-2115-44c5-9746-8cabe1b082e3))
     (pin "8" (uuid d41416b0-98e2-4a9f-a20e-032eb268b8fd))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "RP101") (unit 1)
         )
@@ -4451,7 +4495,7 @@
     )
     (pin "1" (uuid 0001bd7e-06a0-463a-b793-6491be35f33b))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "#PWR0123") (unit 1)
         )
@@ -4476,7 +4520,7 @@
     )
     (pin "1" (uuid 9f2e9796-ae7d-47dc-acc8-acf9efd049d5))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "#PWR0122") (unit 1)
         )
@@ -4502,7 +4546,7 @@
     (pin "1" (uuid 749acfaa-0289-495e-bffb-58459bdd7103))
     (pin "2" (uuid 22717296-ebe6-4ada-89d9-5c624df55748))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "R110") (unit 1)
         )
@@ -4528,7 +4572,7 @@
     (pin "1" (uuid 5ae7a2c8-dd20-4891-be41-2a6fb9d55f92))
     (pin "2" (uuid 9910632b-6979-4eb5-aeb7-25b20face11d))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "C115") (unit 1)
         )
@@ -4553,7 +4597,7 @@
     )
     (pin "1" (uuid 9ddfcf6a-13e7-4e08-a4c5-b28b01f4b605))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "#PWR0118") (unit 1)
         )
@@ -4579,7 +4623,7 @@
     (pin "1" (uuid 1d4fe173-74b7-4c8f-ab2a-f94c34ac752c))
     (pin "2" (uuid 09558fce-b7d5-43fe-a320-cabb1628d5f3))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "R102") (unit 1)
         )
@@ -4604,7 +4648,7 @@
     )
     (pin "1" (uuid 3aee3ee5-f9ee-41ca-979e-835b0d63ee78))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "#PWR0111") (unit 1)
         )
@@ -4631,7 +4675,7 @@
     (pin "2" (uuid cbf249d4-d167-44f7-9cdb-788072c82d73))
     (pin "3" (uuid d69fb726-8057-494b-a43a-b56fed4ae20a))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "D103") (unit 1)
         )
@@ -4658,7 +4702,7 @@
     (pin "2" (uuid 3244371f-91b3-4166-b536-77d24cc4878f))
     (pin "3" (uuid 07243394-fee9-4a0b-81e3-b1b8c8ddfde6))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "D104") (unit 1)
         )
@@ -4684,7 +4728,7 @@
     (pin "1" (uuid 8da7c275-1701-4292-9064-0122df410e31))
     (pin "2" (uuid 06425d7b-9c85-4ebe-85e7-2b0c7f3ae128))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "C105") (unit 1)
         )
@@ -4710,7 +4754,7 @@
     (pin "1" (uuid dd07c78b-e48a-446b-820b-ec408ae1fd0f))
     (pin "2" (uuid 4ec2df9c-ac46-4f88-8b3f-546afde198d2))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "C116") (unit 1)
         )
@@ -4736,7 +4780,7 @@
     (pin "1" (uuid eab52af6-63be-4d4c-80d9-00df77ddda6b))
     (pin "2" (uuid fc5ae650-4ba9-4bf7-8fe4-0036f06ed7df))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "R115") (unit 1)
         )
@@ -4768,7 +4812,7 @@
     (pin "7" (uuid 779c33f2-2529-44ff-802f-7ebc01204851))
     (pin "8" (uuid 55d824be-90c4-4d86-92ce-53399315db30))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "U103") (unit 1)
         )
@@ -4794,7 +4838,7 @@
     (pin "1" (uuid fa49b739-b422-4799-b41c-578a5a16e745))
     (pin "2" (uuid ee7abc8e-85db-4991-a2e2-df04a41f96ad))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "C101") (unit 1)
         )
@@ -4808,7 +4852,7 @@
     (property "Reference" "L101" (at 38.1 64.8462 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Value" "NR3015T1R5N" (at 38.1 67.5386 0)
+    (property "Value" "NR3015T6R8M" (at 38.1 67.5386 0)
       (effects (font (size 1.524 1.524)))
     )
     (property "Footprint" "kicad-libraries:NR3030" (at 38.1 71.12 0)
@@ -4820,7 +4864,7 @@
     (pin "1" (uuid 2a85d13b-eb18-44e5-b99a-53acfea871e7))
     (pin "2" (uuid f02b9488-0cb1-443b-97b4-0e34f020d87c))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "L101") (unit 1)
         )
@@ -4851,7 +4895,7 @@
     (pin "1" (uuid db092190-66c4-44a7-a673-d7fca502503f))
     (pin "2" (uuid a3046bbc-de39-4c01-a337-01c014dc87ac))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "R105") (unit 1)
         )
@@ -4877,7 +4921,7 @@
     (pin "1" (uuid 4d7309a9-6924-4b74-885e-58ed1584afd2))
     (pin "2" (uuid 21d1de11-d1f6-4894-8f08-5018e2c267e0))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "C110") (unit 1)
         )
@@ -4907,7 +4951,7 @@
     )
     (pin "1" (uuid 4aaa68b2-ec6e-44e2-9fef-8db48eef583c))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "#PWR0189") (unit 1)
         )
@@ -4932,7 +4976,7 @@
     )
     (pin "1" (uuid e8783739-0d2f-436b-9879-2dc022b468ef))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "#PWR0202") (unit 1)
         )
@@ -4962,7 +5006,7 @@
     )
     (pin "1" (uuid a3f4bd83-e9ca-48b7-9615-f47c67db0550))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "#PWR0116") (unit 1)
         )
@@ -4987,7 +5031,7 @@
     )
     (pin "1" (uuid 28cd31ea-8b49-4ac3-95df-ce8ccdfd2ab7))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "#PWR0194") (unit 1)
         )
@@ -5023,7 +5067,7 @@
     (pin "4" (uuid ecc35e1d-a1dd-4cba-8b2f-23489110b91f))
     (pin "5" (uuid a8c6df27-2620-4166-8f04-2af69e02e847))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "U106") (unit 1)
         )
@@ -5048,7 +5092,7 @@
     )
     (pin "1" (uuid 91f5f703-784d-4cea-b1a7-3e1b713a2c29))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "#PWR0190") (unit 1)
         )
@@ -5073,7 +5117,7 @@
     )
     (pin "1" (uuid 1f20b948-84df-47b1-828a-7c09432b7a43))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "#PWR0195") (unit 1)
         )
@@ -5103,7 +5147,7 @@
     )
     (pin "1" (uuid c7f11076-1c67-40c8-a2ae-328f4a4184ac))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "#PWR0201") (unit 1)
         )
@@ -5134,7 +5178,7 @@
     (pin "1" (uuid f083afc1-92e8-4e79-906a-5d058a36b157))
     (pin "2" (uuid 2c3a1c49-bbb3-4e73-91c5-8493d02a0eaf))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "R103") (unit 1)
         )
@@ -5160,7 +5204,7 @@
     (pin "1" (uuid 545e9240-0c7b-430d-9d24-94f3f6ff871d))
     (pin "2" (uuid f5dc5506-32a5-4710-aafc-53f8404974c8))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "C104") (unit 1)
         )
@@ -5186,7 +5230,7 @@
     (pin "1" (uuid 813caa66-2be8-4fa4-99a7-52308d6b9c5c))
     (pin "2" (uuid 0ef62674-6e06-49fb-af94-04b935e2f9cb))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "D102") (unit 1)
         )
@@ -5211,7 +5255,7 @@
     )
     (pin "1" (uuid 36d7ed1c-4147-4c4d-94aa-86765db68b17))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "#PWR0101") (unit 1)
         )
@@ -5236,7 +5280,7 @@
     )
     (pin "1" (uuid b0fd1565-f4ff-4793-990c-7387927b6b96))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "#PWR0185") (unit 1)
         )
@@ -5261,7 +5305,7 @@
     )
     (pin "1" (uuid 26ec201d-dfc4-4b18-9c39-d7691cfaa105))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "#PWR0187") (unit 1)
         )
@@ -5287,7 +5331,7 @@
     (pin "1" (uuid e55b4afb-2777-4bd6-b3c6-119d87e1b726))
     (pin "2" (uuid 1622499b-b6f3-402a-8452-333c23c7aef2))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "C119") (unit 1)
         )
@@ -5317,7 +5361,7 @@
     )
     (pin "1" (uuid 8036ca62-8844-4fa0-b608-1cba02ed1343))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "#PWR0199") (unit 1)
         )
@@ -5347,7 +5391,7 @@
     )
     (pin "1" (uuid 987fa5e6-7a06-4bec-824b-f1b3bb01db2e))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "#PWR0196") (unit 1)
         )
@@ -5378,7 +5422,7 @@
     (pin "1" (uuid 69e29058-8aeb-409f-ada8-ec76d5f889fe))
     (pin "2" (uuid 0f584837-344c-415b-a32c-1363ee7d6f3c))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "C120") (unit 1)
         )
@@ -5408,7 +5452,7 @@
     )
     (pin "1" (uuid 52b2ae1b-02f4-4061-ae47-78bbe891bc68))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "#PWR0102") (unit 1)
         )
@@ -5438,7 +5482,7 @@
     (pin "5" (uuid 04ddc134-4050-4035-ad6e-38e936ceade7))
     (pin "6" (uuid 65615126-2b3f-4136-bfdf-abb241520e29))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "U101") (unit 1)
         )
@@ -5463,7 +5507,7 @@
     )
     (pin "1" (uuid d4dd4fd8-9ccd-4b26-a7c5-c67cd3ce90e1))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "#PWR0186") (unit 1)
         )
@@ -5488,7 +5532,7 @@
     )
     (pin "1" (uuid 33e58502-3936-4252-a174-846e93ae2d86))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "#PWR0191") (unit 1)
         )
@@ -5515,7 +5559,7 @@
     (pin "2" (uuid ca2ef1a0-033c-4a9f-a583-487dd86e7b0d))
     (pin "3" (uuid 62bf988a-5e11-4212-9ff5-898188f076c3))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "X101") (unit 1)
         )
@@ -5541,7 +5585,7 @@
     (pin "1" (uuid 884d2889-a6e2-493f-9aca-a71442788000))
     (pin "2" (uuid 784921d4-e525-4f47-be56-7087e8310e53))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "C102") (unit 1)
         )
@@ -5566,7 +5610,7 @@
     )
     (pin "1" (uuid 06836b3f-127a-44a4-b7b6-28c2399aafd9))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "#PWR0188") (unit 1)
         )
@@ -5598,7 +5642,7 @@
     (pin "7" (uuid fbb57c25-04fa-4814-9589-45b1902d5cee))
     (pin "8" (uuid 0b00c88d-9aff-4096-b39c-ff845abfce85))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "RP102") (unit 1)
         )
@@ -5628,7 +5672,7 @@
     (pin "5" (uuid 9f05468a-8e8c-494a-83ee-7647a4d71bf1))
     (pin "6" (uuid 35a0b1ba-6090-4df5-be16-8feb960ddb5b))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "P101") (unit 1)
         )
@@ -5653,7 +5697,7 @@
     )
     (pin "1" (uuid 83faf8e0-db33-451c-9429-983b0b166b3e))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "#PWR0110") (unit 1)
         )
@@ -5678,7 +5722,7 @@
     )
     (pin "1" (uuid 3a505407-b43d-42c0-bf18-72a86e85159b))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "#PWR0105") (unit 1)
         )
@@ -5703,7 +5747,7 @@
     )
     (pin "1" (uuid ed2620ed-edb7-49c6-832b-55a56673d01c))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "#PWR0108") (unit 1)
         )
@@ -5728,7 +5772,7 @@
     )
     (pin "1" (uuid cc5e648b-efa1-44ee-bea5-0b1300831a55))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "#PWR0193") (unit 1)
         )
@@ -5759,7 +5803,7 @@
     (pin "1" (uuid 4653040d-81c7-47f5-a13b-d935a5666a32))
     (pin "2" (uuid 04bb653c-ff98-43a3-b56c-a5d12f9e50e4))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "R101") (unit 1)
         )
@@ -5784,7 +5828,7 @@
     )
     (pin "1" (uuid a1113da0-fea0-4602-b6f0-6df43a35d4c1))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "#PWR0198") (unit 1)
         )
@@ -5814,7 +5858,7 @@
     )
     (pin "1" (uuid 0e0ee7c3-1b39-4e6b-97b7-5e45bf19003e))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "#PWR0197") (unit 1)
         )
@@ -5845,7 +5889,7 @@
     (pin "1" (uuid a9de737d-f921-4b0b-8725-491e8186b8e5))
     (pin "2" (uuid bc81c501-8857-43f2-81c0-ef2ea1b58e63))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "C121") (unit 1)
         )
@@ -5875,7 +5919,7 @@
     )
     (pin "1" (uuid 025b3b12-0f9c-48c0-a2f6-4947da7eaabf))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "#PWR0127") (unit 1)
         )
@@ -5901,7 +5945,7 @@
     (pin "1" (uuid 8a620eb4-a35f-4961-bfe6-a40fade07b7f))
     (pin "2" (uuid 0260cb62-41f2-4ea8-83ca-c7781c0fbec9))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "C122") (unit 1)
         )
@@ -5932,7 +5976,7 @@
     (pin "1" (uuid d504d4e0-e8ea-4f02-a91e-5231f98711c1))
     (pin "2" (uuid f3cdd324-d4d2-4ee2-97f4-8e7db58f3520))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "C107") (unit 1)
         )
@@ -5958,7 +6002,7 @@
     (pin "1" (uuid 730a5f05-225b-46d4-a944-c34f32f926f3))
     (pin "2" (uuid 6ccf9389-9b8e-4d25-9e7b-5631f6bf1acf))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "R104") (unit 1)
         )
@@ -5983,7 +6027,7 @@
     )
     (pin "1" (uuid 1b4545a6-0c5a-4db4-b431-44a25a4da07b))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "#PWR0200") (unit 1)
         )
@@ -6008,7 +6052,7 @@
     )
     (pin "1" (uuid f54124b1-d200-459e-a52f-15294b8a7964))
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000"
           (reference "#PWR0115") (unit 1)
         )
@@ -6027,7 +6071,7 @@
       (effects (font (size 0.9906 0.9906)) (justify left top))
     )
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000" (page "3"))
       )
     )
@@ -6044,7 +6088,7 @@
       (effects (font (size 0.9906 0.9906)) (justify left top))
     )
     (instances
-      (project "esp32-ethernet-warp"
+      (project "esp32-warp"
         (path "/5289b484-5a68-4f84-a1f2-0a3a0b38a000" (page "2"))
       )
     )

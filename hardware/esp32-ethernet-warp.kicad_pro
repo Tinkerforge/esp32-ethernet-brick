@@ -34,9 +34,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 1.7,
-          "height": 2.5,
-          "width": 2.4
+          "drill": 0.0,
+          "height": 2.49936,
+          "width": 1.39954
         },
         "silk_line_width": 0.381,
         "silk_text_italic": false,
@@ -49,13 +49,7 @@
           "min_clearance": 0.0
         }
       },
-      "diff_pair_dimensions": [
-        {
-          "gap": 0.0,
-          "via_gap": 0.0,
-          "width": 0.0
-        }
-      ],
+      "diff_pair_dimensions": [],
       "drc_exclusions": [],
       "meta": {
         "filename": "board_design_settings.json",
@@ -425,7 +419,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "esp32-ethernet-warp.kicad_pro",
+    "filename": "esp32-ethernet.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -446,23 +440,6 @@
         "via_diameter": 0.55,
         "via_drill": 0.25,
         "wire_width": 6
-      },
-      {
-        "bus_width": 12,
-        "clearance": 0.15,
-        "diff_pair_gap": 0.25,
-        "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.2,
-        "line_style": 0,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
-        "name": "ETH",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.25,
-        "via_diameter": 0.55,
-        "via_drill": 0.25,
-        "wire_width": 6
       }
     ],
     "meta": {
@@ -470,24 +447,7 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": [
-      {
-        "netclass": "ETH",
-        "pattern": "TXOP*"
-      },
-      {
-        "netclass": "ETH",
-        "pattern": "TXON*"
-      },
-      {
-        "netclass": "ETH",
-        "pattern": "RXIP*"
-      },
-      {
-        "netclass": "ETH",
-        "pattern": "RXIN*"
-      }
-    ]
+    "netclass_patterns": []
   },
   "pcbnew": {
     "last_paths": {
